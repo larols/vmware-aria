@@ -52,16 +52,13 @@ MyFirstProject-${######}
 
 
 
-`formatVersion: 1
-inputs: {}
-resources:
-  Cloud_vSphere_Machine_1:
-    type: Cloud.vSphere.Machine
-    properties:
-      image: 'windows2019'
-      flavor: 'small'`
+[Example Windows 2019.yaml](./Windows 2019.yaml)
 
 ![image-20221114175545096](./assets/image-20221114175545096.png)
+
+![image-20221114180141082](./assets/image-20221114180141082.png)
+
+
 
 
 
