@@ -2,7 +2,7 @@
 
 [Learn about vRealize Automation](https://learnvrealizeautomation.github.io/)
 
-[Deploy Aria Automation in your lab](/aria-automation/deployment.md)
+[Deploy Aria Automation using the Easy Installer](/aria-automation/deployment.md)
 
 [Initial Setup and first Cloud template](/aria-automation/initial-setup.md)
 
