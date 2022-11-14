@@ -30,8 +30,6 @@
 
 
 
-MyFirstProject-${######} 
-
 ![image-20221114162331501](./assets/image-20221114162331501.png)
 
 
