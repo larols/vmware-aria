@@ -1,3 +1,5 @@
+Login to vRA - https://<vra-ip/fqdn> using the username you enteredin [step 10](./deployment.md).
+
 ![image-20221114161451571](./assets/image-20221114161451571.png)
 
 
