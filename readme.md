@@ -1,5 +1,5 @@
 
 
-[Getting started with vRealize Automation](getting-started.md)
+[Getting started with vRealize Automation](/aria-automation/getting-started.md)
 
 asdf
