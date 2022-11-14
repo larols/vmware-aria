@@ -1,0 +1,43 @@
+To complete the setup you will need to prepare the following.
+
+ vCenter Server FQDN:
+
+ vCenter username with the [right permissions](https://docs.vmware.com/en/VMware-vRealize-Suite-Lifecycle-Manager/8.10/com.vmware.vrsuite.lcm.8.10.doc/GUID-AC013263-7003-402E-9A22-83BFFC4E6CAE.html) for vRSLCM to deploy the appliances to your vCenter server
+
+ Network segment where your appliances will get deployed:
+
+ Subnetmask:
+
+ Default gateway:
+
+ DNS Servers:
+
+ Domain Name:
+
+ NTP Server:
+
+ Lifecycle Manager;
+
+-  Virtual Machine Name:
+
+-  IP Address:
+
+-  Hostname:
+
+ Identity Manager Configuration,
+
+-  Virtual Machine Name:
+
+-  IP Address:
+
+-  Hostname:
+
+ vRealize Automation Configuration,
+
+-  Virtual Machine Name:
+
+-  IP Address:
+
+-  Hostname:
+
+- License Key:
