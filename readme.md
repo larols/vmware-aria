@@ -1,6 +1,6 @@
 
 
-[Getting started with Aria Automation](/aria-automation/getting-started.md)
+[Getting started with Aria Automation](/aria-automation/deployment.md)
 
 
 
