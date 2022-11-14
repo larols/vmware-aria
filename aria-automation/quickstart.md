@@ -1,6 +1,6 @@
 Open up a web browser and direct it to https://your-vra-appliance-fqdn - login with the default configuration admin username you choose in step 10 with the password from step 8.
 
-![image-20221114152155393](./assets/image-20221114152155393.png)
+![image-20221114152155393](./assets/image-20221114152155393.png)<img src="./assets/image-20221114150839061.png" alt="image-20221114150839061" style="zoom: 50%;" />
 
 
 
