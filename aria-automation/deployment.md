@@ -40,6 +40,8 @@
 
 
 
+The Default Configuration Admin you create in this step will later be used to do the initial configuration of vRA and vIDM.
+
 ![image-20221114150839061](./assets/image-20221114150839061.png)
 
 
