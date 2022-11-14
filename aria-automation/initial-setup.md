@@ -61,7 +61,7 @@ resources:
       image: 'windows2019'
       flavor: 'small'`
 
-
+![image-20221114175545096](./assets/image-20221114175545096.png)
 
 
 
