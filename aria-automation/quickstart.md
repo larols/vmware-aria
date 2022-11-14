@@ -1,4 +1,4 @@
-Login to vRA https://vra01.vmlab.se
+Open up a web browser and direct it to https://your-vra-appliance-fqdn - login with the default configuration admin username you choose in step 10 with the password from step 8.
 
 ![image-20221114152155393](./assets/image-20221114152155393.png)
 
