@@ -48,3 +48,20 @@ MyFirstProject-${######}
 
 
 
+![image-20221114173200042](./assets/image-20221114173200042.png)
+
+
+
+`formatVersion: 1
+inputs: {}
+resources:
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    properties:
+      image: 'windows2019'
+      flavor: 'small'`
+
+
+
+
+
