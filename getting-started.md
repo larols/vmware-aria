@@ -1,1 +1,1 @@
-![image-20221114134437580](C:\Users\lolsson\OneDrive - VMware, Inc\CMBU\Proof of Concept\vmware-aria\image-20221114134437580.png)
+![image-20221114134437580](image-20221114134437580.png)
