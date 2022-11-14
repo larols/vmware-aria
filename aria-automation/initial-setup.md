@@ -48,11 +48,11 @@ MyFirstProject-${######}
 
 
 
+[Code example](https://github.com/larols/vmware-aria/blob/main/aria-automation/Windows%202019.yaml)
+
 ![image-20221114173200042](./assets/image-20221114173200042.png)
 
 
-
-[Example Windows 2019.yaml](./Windows 2019.yaml)
 
 ![image-20221114175545096](./assets/image-20221114175545096.png)
 
