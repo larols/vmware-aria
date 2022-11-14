@@ -1,5 +1,3 @@
-The following [system resources](https://docs.vmware.com/en/vRealize-Automation/8.10/installing-vrealize-automation-easy-installer/GUID-05625E1B-A1E8-408E-A87A-97DABA914CE5.html) are required to install vRealize Automation and VMware Identity Manager.
-
 
 
 ![image-20221114134437580.png](./assets/image-20221114134437580.png)
@@ -7,4 +5,38 @@ The following [system resources](https://docs.vmware.com/en/vRealize-Automation/
 ![image-20221114141744010.png](./assets/image-20221114141744010.png)
 
 ![image-20221114142634759](./assets/image-20221114142634759.png)
+
+
+
+![image-20221114145546861](./assets/image-20221114145546861-1668434154722-10.png)
+
+
+
+![image-20221114145614545](./assets/image-20221114145614545.png)
+
+
+
+![image-20221114145653462](./assets/image-20221114145653462-1668434217247-12.png)
+
+
+
+![image-20221114145724643](./assets/image-20221114145724643-1668434245909-14.png)
+
+
+
+![image-20221114145804917](./assets/image-20221114145804917-1668434290951-16.png)
+
+
+
+![image-20221114150000257](./assets/image-20221114150000257.png)
+
+
+
+![image-20221114150023388](./assets/image-20221114150023388-1668434425579-18-1668434429391-20.png)
+
+![image-20221114150208199](./assets/image-20221114150208199.png)
+
+
+
+![image-20221114150434172](./assets/image-20221114150434172.png)
 
