@@ -1,6 +1,8 @@
-
+Download and mount VMware vRealize Suite Lifecycle Manager Easy Installer for vRA. This ISO package contains vRealize Automation, VMware Identity Manager and vRealize Suite Lifecycle Manager. The vRealize Easy Installer helps you install vRealize Automation and VMware Identity Manager in less time than it would take to install individual products. 
 
 ![image-20221114134437580.png](./assets/image-20221114134437580.png)
+
+The 
 
 ![image-20221114141744010.png](./assets/image-20221114141744010.png)
 
