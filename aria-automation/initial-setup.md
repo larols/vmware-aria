@@ -60,9 +60,11 @@ Time to create you first Cloud Template. Create it from Blank Canvas or upload m
 
 ![image-20221114173200042](./assets/image-20221114173200042.png)
 
-You can now go ahead and hit Deploy and fingers crossed you have deployed your first VM using Aria Automation.
+You can now go ahead and hit Deploy and give your Deployment a name.
 
 ![image-20221114175545096](./assets/image-20221114175545096.png)
+
+Track your deployment in Resources - Deployments.
 
 ![image-20221114180141082](./assets/image-20221114180141082.png)
 
