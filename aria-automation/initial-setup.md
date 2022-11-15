@@ -8,7 +8,7 @@ Click Infrastructure tab.
 
 ![image-20221114161520199](./assets/image-20221114161520199.png)
 
-Click Continue and then scroll down in the menu to your left and click Cloud Accounts. Choose vCenter Server.
+Click Continue below the diagram and then scroll down in the menu to your left and click Cloud Accounts. Choose vCenter Server.
 
 ![image-20221114161623186](./assets/image-20221114161623186.png)
 
