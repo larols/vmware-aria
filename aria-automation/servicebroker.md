@@ -1,4 +1,8 @@
-![image-20221116121722216](./assets/image-20221116121722216.png)
+![image-20221116132240922](./assets/image-20221116132240922.png)
+
+Cloud Assembly - Design - Cloud Templates - Windows 2019
+
+![image-20221116131727627](./assets/image-20221116131727627.png)
 
 ![image-20221116121754638](./assets/image-20221116121754638.png)
 
