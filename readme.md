@@ -12,7 +12,7 @@
 
 [Service Broker Content Sharing Policy](/aria-automation/servicebroker.md)
 
-
+[Extensibility](/aria-automation/extensibility.md)
 
 
 
