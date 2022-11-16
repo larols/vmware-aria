@@ -10,7 +10,7 @@
 
 [Initial Setup and first Cloud template](/aria-automation/initial-setup.md)
 
-[Service Broker content](/aria-automation/servicebroker.md)
+[Service Broker Content Sharing Policy](/aria-automation/servicebroker.md)
 
 
 
