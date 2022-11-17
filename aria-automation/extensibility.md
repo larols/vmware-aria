@@ -4,6 +4,18 @@
 
 ![image-20221117101412656](./assets/images/extensibility/image-20221117101412656.png)
 
+```
+def handler(context, inputs):
+    greeting = "Hello, {0}!".format(inputs["target"])
+    print(greeting)
+
+    outputs = {
+      "greeting": greeting
+    }
+
+    return outputs
+```
+
 Save - Create Version
 
 ![image-20221117101452533](./assets/images/extensibility/image-20221117101452533.png)
