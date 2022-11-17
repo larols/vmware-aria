@@ -58,7 +58,7 @@ Time to create you first Cloud Template. Create it from Blank Canvas or upload m
 
 
 
-[Code example](https://github.com/larols/vmware-aria/blob/main/aria-automation/Windows%202019.yaml)
+[Cloud template example](https://github.com/larols/vmware-aria/blob/main/aria-automation/assets/yaml/Windows%202019.yaml)
 
 ![image-20221114173200042](./assets/images/initialsetup/image-20221114173200042.png)
 
