@@ -14,7 +14,7 @@
 
 - [Active Directory users and groups](/aria-automation/activedirectory.md)
 
-- [Extensibility](/aria-automation/extensibility.md)
+- [Extensibility 1](/aria-automation/extensibility1.md)
 
-- [Subscriptions](/aria-automation/subscriptions.md)
+- [Extensibility 2](/aria-automation/extensibility2.md)
 
