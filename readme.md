@@ -12,7 +12,7 @@
 
 - [Service Broker Content Sharing Policy](/aria-automation/servicebroker.md)
 
-- [Active Directory](/aria-automation/activedirectory.md)
+- [Active Directory users and groups](/aria-automation/activedirectory.md)
 
 - [Extensibility](/aria-automation/extensibility.md)
 
