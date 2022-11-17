@@ -16,13 +16,13 @@ def handler(context, inputs):
     return outputs
 ```
 
-Save - Create Version
+Hit Save and then Create Version
 
 ![image-20221117101452533](./assets/images/extensibility/image-20221117101452533.png)
 
 ![image-20221117101541526](./assets/images/extensibility/image-20221117101541526.png)
 
-Click version in upper right corner
+Click versions in upper right corner
 
 ![image-20221117101559200](./assets/images/extensibility/image-20221117101559200.png)
 
@@ -31,6 +31,8 @@ Click RELEASE
 ![image-20221117101615956](./assets/images/extensibility/image-20221117101615956.png)
 
 ![image-20221117101724988](./assets/images/extensibility/image-20221117101724988.png)
+
+Go to Service Broker to update your content sources
 
 ![image-20221117101738041](./assets/images/extensibility/image-20221117101738041.png)
 
