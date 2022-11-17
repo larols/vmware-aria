@@ -10,7 +10,7 @@ Cloud Assembly - Design - Cloud Templates - Windows 2019
 
 Content & Policies - Content Sources - NEW - VMware Cloud Templates 
 
-![image-20221116152710130](./assets/images/image-20221116152710130.png)
+![image-20221116152710130](./assets/images/servicebroker/image-20221116152710130.png)
 
 Content & Policies - Policies - Definitions - NEW POLICY
 

@@ -16,5 +16,5 @@
 
 [Extensibility](/aria-automation/extensibility.md)
 
-
+[Subscriptions](/aria-automation/subscriptions.md)
 
