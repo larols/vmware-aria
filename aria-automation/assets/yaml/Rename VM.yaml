@@ -1,0 +1,13 @@
+formatVersion: 1
+inputs:
+  hostname:
+    type: string
+    title: Input VM Name
+    description: Name of your VM
+resources:
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    properties:
+      image: windows2019
+      flavor: small
+      newName: '${input.hostname}'
