@@ -6,15 +6,15 @@
 
 ------
 
-[Deploy Aria Automation using the Easy Installer](/aria-automation/deployment.md)
+- [Deploy Aria Automation using the Easy Installer](/aria-automation/deployment.md)
 
-[Initial Setup and first Cloud template](/aria-automation/initial-setup.md)
+- [Initial Setup and first Cloud template](/aria-automation/initial-setup.md)
 
-[Service Broker Content Sharing Policy](/aria-automation/servicebroker.md)
+- [Service Broker Content Sharing Policy](/aria-automation/servicebroker.md)
 
-[Active Directory](/aria-automation/activedirectory.md)
+- [Active Directory](/aria-automation/activedirectory.md)
 
-[Extensibility](/aria-automation/extensibility.md)
+- [Extensibility](/aria-automation/extensibility.md)
 
-[Subscriptions](/aria-automation/subscriptions.md)
+- [Subscriptions](/aria-automation/subscriptions.md)
 
