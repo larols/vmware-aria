@@ -1,0 +1,1 @@
+ApiDocs: https://your-vra-node-fqdn/automation-ui/api-docs/
