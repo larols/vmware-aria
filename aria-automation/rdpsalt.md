@@ -126,5 +126,5 @@ resources:
 
 Click DEPLOY. Give it a name and click DEPLOY.
 
-![image-20221118174328993](./assets/images/multivm/image-20221118174328993.png)
+![image-20221118174704215](./assets/images/multivm/image-20221118174704215.png)
 
