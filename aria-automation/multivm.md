@@ -140,7 +140,7 @@ inputs:
       totalMemoryMB: ${input.memory * 1024}
 ```
 
-Or you could use Property Groups. Here's a two blog posts explaining Property Groups.
+Or you could use Property Groups. Here's two good blog posts explaining Property Groups.
 
 https://blogs.vmware.com/management/2020/12/introducing-vrealize-automation-property-groups.html
 
