@@ -118,10 +118,10 @@ resources:
     properties:
       image: windows2019
       flavor: small
-    remoteAccess:
-      authentication: usernamePassword
-      username: Administrator
-      password: VMware1!
+      remoteAccess:
+        authentication: usernamePassword
+        username: Administrator
+        password: VMware1!
 ```
 
 Click DEPLOY. Give it a name and click DEPLOY.
