@@ -30,7 +30,7 @@ Lastly before hitting CLOSE. Record the Cloud Template ID from the URL. In my ca
 https://vra-fqdn/automation-ui/#/blueprint-ui;ash=%2Fblueprint%2Fedit%2Fb566ff96-8984-4054-883d-f4cf13211ea5
 ```
 
-And the ID that I'm interested in keeping form the URL is,
+And the ID that I'm interested in keeping from the URL is,
 
 ```
 b566ff96-8984-4054-883d-f4cf13211ea5
@@ -88,7 +88,7 @@ Lastly we need to create a subscription. Go to Extensibility - Subscriptions and
 
 Give the subscription a name. Choose the Event Topic Compute Allocation. And set Action/Workflow to your newly created Action Rename VM.
 
-Enable Condition 'Filter event in topic' and add event.data.blueprintId =='' together with the cloud template ID that you recorded in between the ''. In my case this looks like this,
+Enable Condition 'Filter event in topic' and add *event.data.blueprintId ==''* together with the cloud template ID that you recorded earlier in between the ''. In my case it will looks like this,
 
 ```
 event.data.blueprintId =='b566ff96-8984-4054-883d-f4cf13211ea5'
