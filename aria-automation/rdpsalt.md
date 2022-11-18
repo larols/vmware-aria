@@ -1,6 +1,4 @@
-First we need to make some changes to the vSphere virtual machine template. Convert your template to a VM, boot it up and makes the following changes. Then convert it back to a template again. Make sure your newly modified template is selected in Cloud Assembly - Infrastructure - Image Mappings.
-
-
+First we need to make some changes to the vSphere virtual machine template. Convert your template to a VM, boot it up and make the following changes. Then convert it back to a template again. Make sure your newly modified template is selected in Cloud Assembly - Infrastructure - Image Mappings.
 
 - *Create a firewall rule for TCP 445 – Allow on all profiles*
 
@@ -127,4 +125,6 @@ resources:
 Click DEPLOY. Give it a name and click DEPLOY.
 
 ![image-20221118174704215](./assets/images/multivm/image-20221118174704215.png)
+
+![image-20221118174922699](./assets/images/multivm/image-20221118174922699.png)
 
