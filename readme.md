@@ -17,6 +17,6 @@
 
 ------
 
-- [Add vRealize Automation Config](/aria-automation/addingaac.md)
-- [Enable RDP using SSC](/aria-automation/rdpsalt.md)
+- [Add Aria Automation Config](/aria-automation/addingaac.md)
+- [Enable RDP using Aria Automation Config](/aria-automation/rdpsalt.md)
 
