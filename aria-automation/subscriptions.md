@@ -1,4 +1,8 @@
+Select your Windows 2019 Cloud Template and click CLONE.
+
 ![image-20221118003043088](./assets/images/subscriptions/image-20221118003043088.png)
+
+Give the new Cloud Template a name. Select your project and version to clone.
 
 ![image-20221118003120924](./assets/images/subscriptions/image-20221118003120924.png)
 
