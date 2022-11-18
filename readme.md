@@ -13,6 +13,4 @@
 - [Extensibility](/aria-automation/extensibility1.md)
 - [Extensibility subscriptions](/aria-automation/subscriptions.md)
 - [Tagging](/aria-automation/tagging.md)
-
 - [Multi VM Cloud Template](/aria-automation/multivm.md)
-
