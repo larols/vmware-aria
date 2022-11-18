@@ -64,15 +64,34 @@ Wait for installation to complete.
 
 ![image-20221118164814366](./assets/images/multivm/image-20221118164814366.png)
 
+Make sure you have permissions to access SaltStack Config.
 
+![image-20221118165806498](./assets/images/multivm/image-20221118165806498.png)
 
+![image-20221118165812415](./assets/images/multivm/image-20221118165812415.png)
 
+![image-20221118165843576](./assets/images/multivm/image-20221118165843576.png)
 
+![image-20221118170337656](./assets/images/multivm/image-20221118170337656.png)
 
+![image-20221118170257593](./assets/images/multivm/image-20221118170257593.png)
 
+**If you get a 403 error message** while logging in it's likely to be caused by the self signed certificate we created in the beginning.
 
+Follow the steps outlined [here](https://docs.vmware.com/en/VMware-vRealize-Automation-SaltStack-Config/8.10/install-configure-saltstack-config/GUID-21A87CE2-8184-4F41-B71B-0FCBB93F21FC.html) to take care of that. 
 
+As this is my lab environment I will just disable Certificate validation by adding this to the end */etc/raas/raas* on the SSC node.
 
+```
+vra:
+  validate_ssl: false
+```
+
+And run: *systemctl restart raas*
+
+![image-20221118171300183](./assets/images/multivm/image-20221118171300183.png)
+
+All done.
 
 
 
