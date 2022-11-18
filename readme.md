@@ -17,4 +17,5 @@
 
 ------
 
-- [Add vRealize Automation Config](/aria-automation/addingssc.md)
+- [Add vRealize Automation Config](/aria-automation/addingaac.md)
+
