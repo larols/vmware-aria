@@ -1,4 +1,4 @@
-Start off bly cloning your Windows 2019 template.
+Start off by cloning your Windows 2019 Cloud Template.
 
 ![image-20221118114504647](./assets/images/multivm/image-20221118114504647.png)
 
