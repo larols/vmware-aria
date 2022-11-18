@@ -91,7 +91,11 @@ And run: *systemctl restart raas*
 
 ![image-20221118171300183](./assets/images/multivm/image-20221118171300183.png)
 
-All done.
+Final steps. Go to Cloud Assembly - Infrastructure - Integrations. Open the SaltSTack integration named vssc_***
 
+![image-20221118173420913](./assets/images/multivm/image-20221118173420913.png)
 
+Change Running environment to: embedded-ABX-onprem. Enter the password you choose in step 8 during the easy installer setup day 1. Click VALIDATE and SAVE.
+
+![image-20221118173546841](./assets/images/multivm/image-20221118173546841.png)
 
