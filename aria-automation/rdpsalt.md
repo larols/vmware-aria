@@ -128,3 +128,7 @@ Click DEPLOY. Give it a name and click DEPLOY.
 
 ![image-20221118174922699](./assets/images/multivm/image-20221118174922699.png)
 
+After some time you can track the SaltStack Config Activities. You will see functions like deploy.minion and accept.key.
+
+![image-20221118175419180](./assets/images/multivm/image-20221118175419180.png)
+

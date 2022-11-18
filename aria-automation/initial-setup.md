@@ -48,6 +48,14 @@ And [Image Mappings](https://learncloudassembly.github.io/Infrastructure/Configu
 
 ![image-20221114162644549](./assets/images/initialsetup/image-20221114162644549.png)
 
+Infrastructure - Networks. Click on the name of the network where you want your VMs to end up.
+
+![image-20221118180814351](./assets/images/multivm/image-20221118180814351.png)
+
+Mark Default for zone and click SAVE.
+
+![image-20221118180901854](./assets/images/multivm/image-20221118180901854.png)
+
 Time to create you first Cloud Template. Create it from Blank Canvas or upload my [example](https://github.com/larols/vmware-aria/blob/main/aria-automation/Windows%202019.yaml) My example needs a flavor called 'small' and an image named 'windows2019'.
 
 ![image-20221114162926021](./assets/images/initialsetup/image-20221114162926021.png)
