@@ -109,3 +109,40 @@ Go ahead and click DEPLOY. Give it a name and then DEPLOY. Then see the results.
 
 ![image-20221118121437944](./assets/images/multivm/image-20221118121437944.png)
 
+If you don't want to use flavor mappings you could instead use:
+
+```
+inputs:
+  cpu:
+    type: integer
+    description: Set the number of CPU's
+    title: CPU
+    enum:
+      - 1
+      - 2
+      - 4
+      - 8
+    default: 2
+  memory:
+    type: integer
+    minimum: 4
+    maximum: 12
+    description: Set the amount of memory
+    title: Memory
+```
+
+```
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    properties:
+      image: windows2019
+      cpuCount: ${input.cpu}
+      totalMemoryMB: ${input.memory * 1024}
+```
+
+Or you could use Property Groups. Here's a two blog posts explaining Property Groups.
+
+https://blogs.vmware.com/management/2020/12/introducing-vrealize-automation-property-groups.html
+
+https://veducate.co.uk/vra-property-groups/
+
