@@ -59,6 +59,8 @@ reg_enable_rds_connections:
     - vtype: REG_DWORD
 ```
 
+[Other examples.](https://github.com/larols/vmware-aria/tree/main/aria-automation/assets/statefiles)
+
 ![image-20221118172809322](./assets/images/multivm/image-20221118172809322.png)
 
 Go back to Cloud Assembly and Clone your Windows 2019 Cloud Template.
@@ -134,3 +136,4 @@ After some time you can track the SaltStack Config Activities. You will see func
 
 ![image-20221118175419180](./assets/images/multivm/image-20221118175419180.png)
 
+[More example state files](https://github.com/larols/vmware-aria/tree/main/aria-automation/assets/statefiles)
