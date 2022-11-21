@@ -7,7 +7,8 @@ set_hostname:
 join_to_domain:
   system.join_domain:
     - name: vmlab.se
-    # This Jinja control structure retrieves the named data objects from the pillar called "ad-join"
+    # This Jinja control structure retrieves the named data objects from the pillar called "join-ad"
+    # https://github.com/larols/vmware-aria/blob/main/aria-automation/assets/pillars/join-ad.txt
     - username: svc-ssc-ad@vmlab.se
     - password: <svc-ssc-ad-password>
     - restart: True
