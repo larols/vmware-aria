@@ -36,6 +36,8 @@ Move the slider bar down to the Never notify selection and click OK
 Reboot the machine for changes to take effect
 ```
 
+https://https://SSC-FQDN
+
 ![image-20221118172435871](./assets/images/multivm/image-20221118172435871.png)
 
 Go to Config - File Server and click CREATE in the bottom left corner. Select Salt environment: base. Give your state file a name. I'm using /windows/remote-desktop/init.sls - copy and past the following example code. This will enable the Remote Desktop service.

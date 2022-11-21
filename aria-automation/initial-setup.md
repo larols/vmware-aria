@@ -64,8 +64,6 @@ Time to create you first Cloud Template. Create it from Blank Canvas or upload m
 
 ![image-20221114162958833](./assets/images/initialsetup/image-20221114162958833.png)
 
-
-
 [Cloud template example](https://github.com/larols/vmware-aria/blob/main/aria-automation/assets/yaml/Windows%202019.yaml)
 
 ![image-20221114173200042](./assets/images/initialsetup/image-20221114173200042.png)
@@ -74,9 +72,11 @@ You can now go ahead and hit Deploy and give your Deployment a name.
 
 ![image-20221114175545096](./assets/images/initialsetup/image-20221114175545096.png)
 
-Track your deployment in Resources - Deployments.
+Track your deployment in Resources - Deployments. 
 
-![image-20221114180141082](./assets/images/initialsetup/image-20221114180141082.png)
+![image-20221121105356575](./assets/images/networkprofiles/image-20221121105356575.png)
+
+
 
 
 
