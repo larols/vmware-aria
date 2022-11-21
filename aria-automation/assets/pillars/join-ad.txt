@@ -1,0 +1,6 @@
+{
+    "join-ad": {
+      "username": "svc-ssc-ad@vmlab.se",
+      "password": "VMware1!"
+    }
+}
