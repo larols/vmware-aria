@@ -88,3 +88,4 @@ When finished you can view the output from the script.
 
 ![image-20221117102220284](./assets/images/extensibility/image-20221117102220284.png)
 
+[Done.](https://larols.github.io/vmware-aria/)

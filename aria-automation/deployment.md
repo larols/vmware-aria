@@ -56,3 +56,4 @@ Make sure all your values are correct and hit SUBMIT.
 
 ![image-20221114151103964](./assets/images/deployment/image-20221114151103964.png)
 
+[Done.](https://larols.github.io/vmware-aria/)

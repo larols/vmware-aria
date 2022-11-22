@@ -146,3 +146,4 @@ https://blogs.vmware.com/management/2020/12/introducing-vrealize-automation-prop
 
 https://veducate.co.uk/vra-property-groups/
 
+[Done.](https://larols.github.io/vmware-aria/)

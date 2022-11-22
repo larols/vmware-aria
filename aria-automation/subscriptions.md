@@ -137,3 +137,5 @@ To publish this to the Service Broker Catalog you need to create a version of th
 It will be added automatically to Service Broker after some time if you follow the steps in [Service Broker Content Sharing Policy](/aria-automation/servicebroker.md). You can also force it by going to Service Broker - Content and Policies - Content Sources - Edit your Cloud Template content source and click SAVE & IMPORT.
 
 ![image-20221118011038572](./assets/images/subscriptions/image-20221118011038572.png)
+
+[Done.](https://larols.github.io/vmware-aria/)

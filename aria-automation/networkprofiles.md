@@ -66,3 +66,5 @@ resources:
 This will make sure your VM end up in the Network profile that is tagged with 'net:production'
 
 Go ahead and deploy to try it out.
+
+[Done.](https://larols.github.io/vmware-aria/)

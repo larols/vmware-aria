@@ -137,3 +137,5 @@ After some time you can track the SaltStack Config Activities. You will see func
 ![image-20221118175419180](./assets/images/multivm/image-20221118175419180.png)
 
 [More example state files](https://github.com/larols/vmware-aria/tree/main/aria-automation/assets/statefiles)
+
+[Done.](https://larols.github.io/vmware-aria/)

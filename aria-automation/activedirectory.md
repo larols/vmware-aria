@@ -40,3 +40,4 @@ https://vidm-IP/FQDN
 
 ![image-20221117095526026](./assets/images/activedirectory/image-20221117095526026.png)
 
+[Done.](https://larols.github.io/vmware-aria/)
