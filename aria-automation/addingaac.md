@@ -64,7 +64,7 @@ Wait for installation to complete.
 
 ![image-20221118164814366](./assets/images/multivm/image-20221118164814366.png)
 
-Make sure you have permissions to access SaltStack Config.
+Make sure you got the right permissions to access SaltStack Config.
 
 ![image-20221118165806498](./assets/images/multivm/image-20221118165806498.png)
 
