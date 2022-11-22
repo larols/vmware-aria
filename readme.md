@@ -10,7 +10,7 @@
 - [Initial Setup and first Cloud template](/aria-automation/initial-setup.md)
 - [Service Broker Content Sharing Policy](/aria-automation/servicebroker.md)
 - [Active Directory users and groups](/aria-automation/activedirectory.md)
-- [Extensibility](/aria-automation/extensibility1.md)
+- [Extensibility](/aria-automation/extensibility.md)
 - [Extensibility subscriptions](/aria-automation/subscriptions.md)
 - [Tagging](/aria-automation/tagging.md)
 - [Network Profiles](/aria-automation/networkprofiles.md)
