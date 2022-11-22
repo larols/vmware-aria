@@ -68,7 +68,7 @@ Make sure you got the right permissions to access SaltStack Config.
 
 ![image-20221118165806498](./assets/images/multivm/image-20221118165806498.png)
 
-![image-20221118165812415](./assets/images/multivm/image-20221118165812415.png)
+![image-20221122112353236](./assets/images/networkprofiles/image-20221122112353236.png)
 
 ![image-20221118165843576](./assets/images/multivm/image-20221118165843576.png)
 
