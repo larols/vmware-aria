@@ -74,9 +74,9 @@ I'm adding both Super User and Administrator role in this example.
 
 ![image-20221118165843576](./assets/images/multivm/image-20221118165843576.png)
 
-![image-20221118170337656](./assets/images/multivm/image-20221118170337656.png)
 
-![image-20221118170257593](./assets/images/multivm/image-20221118170257593.png)
+
+
 
 **If you get a 403 error message** while logging in it's likely to be caused by the self signed certificate we created in the beginning.
 
