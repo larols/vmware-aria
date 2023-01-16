@@ -1,0 +1,19 @@
+//This is just an example!
+//Used with https://172.16.252.147:888/policy/api/v1/infra/domains/default/groups/<GROUP NAME>
+
+{
+    "expression": [
+        {
+            "member_type": "VirtualMachine",
+            "key": "Tag",
+            "operator": "EQUALS",
+            "scope_operator": "EQUALS",
+            "value": "SCOPE|TAG VALUE",
+            "resource_type": "Condition"
+        }
+    ],
+    "resource_type": "Group",
+    "display_name": "GROUP NAME",
+    "description": "GROUP DESCRIPTION",
+    "_protection": "NOT_PROTECTED"
+}
