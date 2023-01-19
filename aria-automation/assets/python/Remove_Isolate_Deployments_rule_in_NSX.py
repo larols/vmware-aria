@@ -4,7 +4,6 @@
 
 import requests
 
-
 def handler(context, inputs):
     nsxuser = context.getSecret(inputs['nsxuser'])
     nsxpassword = context.getSecret(inputs['nsxpassword'])
