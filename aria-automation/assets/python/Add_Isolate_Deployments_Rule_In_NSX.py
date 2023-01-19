@@ -24,7 +24,6 @@ def handler(context, inputs):
         print(f"Error: {e}")
         return
 
-
     # Updating Isolate Deployment policy with the new deployment
     url = f'https://{nsxmanager}/policy/api/v1/infra'
     data = { "resource_type": "Infra", "children": [ { "resource_type": "ChildDomain", "Domain": { "id": "default", "resource_type": "Domain", "children": [ { "resource_type": "ChildSecurityPolicy", "marked_for_delete": "false", "SecurityPolicy": { "id": "Isolate_deployments", "display_name": "Isolate Deployments", "resource_type": "SecurityPolicy", "category": "Environment", "sequence_number": 99, "rules": [ { "resource_type": "Rule", "display_name": f"{deploymentname}", "sources_excluded": "true", "source_groups": [ f"/infra/domains/default/groups/{deploymentname}" ], "destination_groups": [ f"/infra/domains/default/groups/{deploymentname}" ], "services": [ "ANY" ], "action": "DROP", "scope": [ f"/infra/domains/default/groups/{deploymentname}" ] } ] } } ] } } ] }
