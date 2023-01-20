@@ -4,11 +4,12 @@
 
 import requests
 
+
 def handler(context, inputs):
     nsxuser = context.getSecret(inputs['nsxuser'])
     nsxpassword = context.getSecret(inputs['nsxpassword'])
     deploymentname = str(inputs["deploymentName"])
-    nsxmanager = "YOUR NSX MANAGER IP"
+    nsxmanager = "172.16.252.147:888"
 
     headers = {'content-type': 'application/json'}
 
@@ -17,17 +18,17 @@ def handler(context, inputs):
     try:
         resp = requests.delete(url=url, headers=headers, auth=(nsxuser, nsxpassword), verify=False)
         resp.raise_for_status()
-        print("Removed rule from Isolate Deployments policy")
+        print(f"Removed rule {deploymentname} from Isolate Deployments policy")
     except Exception as e:
         print(f"Error: {e}")
         return
 
-    # Remove group in NSX 
+    # Remove group in NSX
     url = f'https://{nsxmanager}/policy/api/v1/infra/domains/default/groups/{deploymentname}'
     try:
         resp = requests.delete(url=url, headers=headers, auth=(nsxuser, nsxpassword), verify=False)
         resp.raise_for_status()
-        print("Removed the NSX group")
+        print(f"Deleted the {deploymentname} NSX group")
     except Exception as e:
         print(f"Error: {e}")
         return
