@@ -7,15 +7,12 @@
 import requests
 import json
 
-# existingTags=inputs['existingTags']
-
 # deploymentId = inputs['__metadata_deploymentId']
 deploymentId = "6d6caf82-1e20-46af-a8a7-03dda1e52e59"
 # resourceId = inputs['__metadata_resourceProperties']['resourceId']
 resourceId = "358a6c31-89fc-416d-a30e-a73b72f91553"
-# resourceName = inputs['__metadata_resourceProperties']['resourceName']
-resourceName = "vSphere_Machine_1-mcm10596-222966367295"
-newTag = "any"
+
+newTag = "HTTPS"
 url = "YOUR VRA IP"
 
 
@@ -35,26 +32,16 @@ def post_updated_tags_to_resource(bearer_token, newTags, inputs):
         "content-type": "application/json",
         "Authorization": "Bearer " + bearer_token
     }
-    # parsing data to prepare valid input
-    prefix = '{"actionId":"Cloud.vSphere.Machine.Update.Tags","inputs":{"tags":'
-    json_prefix = json.dumps(prefix)
-    json_prefix = json_prefix[1:-1]
-    while "\\" in json_prefix:
-        json_prefix = json_prefix.replace("\\", "")
-
-    suffix = '},"reason":"update tags"}'
-    json_suffix = json.dumps(suffix)
-    json_suffix = json_suffix[1:-1]
-    while "\\" in json_suffix:
-        json_suffix = json_suffix.replace("\\", "")
-
-    json_newTags = json.dumps(newTags)
-    json_data = (json_prefix + json_newTags + json_suffix)
-
+    json_data = json.dumps({
+        "actionId": "Cloud.vSphere.Machine.Update.Tags",
+        "inputs": {
+            "tags": newTags
+        },
+        "reason": "update tags"
+    })
     # post new tags to resourceId
     with requests.Session() as session:
-        resp = session.post(f"{url}/deployment/api/deployments/{deploymentId}/resources/{resourceId}/requests",
-                            data=json_data, headers=vraheaders, verify=False)
+        resp = session.post(f"{url}/deployment/api/deployments/{deploymentId}/resources/{resourceId}/requests", data=json_data, headers=vraheaders, verify=False)
         resp.raise_for_status()
         json_data = resp.json()
 
@@ -72,7 +59,6 @@ def get_existing_tags(bearer_token, inputs):
         "content-type": "application/json",
         "Authorization": "Bearer " + bearer_token
     }
-
     with requests.Session() as session:
         resp = session.get(f"{url}/deployment/api/resources/{resourceId}", headers=vraheaders, verify=False)
         resp.raise_for_status()
