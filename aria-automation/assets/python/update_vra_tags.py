@@ -37,7 +37,7 @@ def post_updated_tags_to_resource(bearer_token, newTags, inputs):
         "inputs": {
             "tags": newTags
         },
-        "reason": "update tags"
+        "reason": "Tags updated by Day2 action"
     })
     # post new tags to resourceId
     with requests.Session() as session:
@@ -79,8 +79,7 @@ def vraauth(inputs):
         "content-type": "application/json"
     }
     with requests.Session() as session:
-        resp = session.post(f"{url}/csp/gateway/am/api/login?access_token", json=vralogin, headers=vraheaders,
-                            verify=False)
+        resp = session.post(f"{url}/csp/gateway/am/api/login?access_token", json=vralogin, headers=vraheaders, verify=False)
         resp.raise_for_status()
         refresh_token = {"refreshToken": resp.json()['refresh_token']}
         resp = session.post(f"{url}/iaas/api/login", json=refresh_token, headers=vraheaders, verify=False)
