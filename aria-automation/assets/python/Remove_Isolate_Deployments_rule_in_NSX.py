@@ -9,7 +9,7 @@ def handler(context, inputs):
     nsxuser = context.getSecret(inputs['nsxuser'])
     nsxpassword = context.getSecret(inputs['nsxpassword'])
     deploymentname = str(inputs["deploymentName"])
-    nsxmanager = "172.16.252.147:888"
+    nsxmanager = "NSX MANAGER IP"
 
     headers = {'content-type': 'application/json'}
 
