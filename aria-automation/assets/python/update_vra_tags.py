@@ -8,8 +8,6 @@ import requests
 import json
 import time
 
-newTag = "web"
-
 
 def handler(context, inputs):
     bearer_token = vraauth(inputs)
@@ -23,6 +21,7 @@ def post_updated_tags_to_resource(bearer_token, newTags, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
     url = inputs["vra_url"]
+    newTag = inputs["newTag"]
     vraheaders = {
         "accept": "application/json",
         "content-type": "application/json",
@@ -38,7 +37,7 @@ def post_updated_tags_to_resource(bearer_token, newTags, inputs):
     })
     # post new tags to resourceId
     with requests.Session() as session:
-        for i in range(3):
+        for i in range(5):
             resp = session.post(f"{url}/deployment/api/deployments/{deploymentId}/resources/{resourceId}/requests",
                                 data=json_data, headers=vraheaders, verify=False)
             if resp.status_code == 409:
@@ -54,11 +53,14 @@ def update_existingTags_with_newTag(existingTags, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
     url = inputs["vra_url"]
+    newTag = inputs["newTag"]
     existingTags = [d for d in existingTags if d.get('key') != 'service']
-    new_services = newTag.split(", ")
+    tagString = ", ".join(newTag)
+    new_services = tagString.split(", ")
     for i, service in enumerate(new_services):
         existingTags.append({'key': f'service', 'value': service})
     newTags = existingTags
+    print(f"New set of tags for {resourceId} will be: {existingTags}")
     return (newTags)
 
 
@@ -67,6 +69,7 @@ def get_existing_tags(bearer_token, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
     url = inputs["vra_url"]
+    newTag = inputs["newTag"]
     vraheaders = {
         "accept": "application/json",
         "content-type": "application/json",
