@@ -106,3 +106,4 @@ def vraauth(inputs):
         bearer_token = resp.json()['token']
         return bearer_token
 
+
