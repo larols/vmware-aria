@@ -9,7 +9,6 @@ import sys
 
 bearer_token = None
 
-
 def handler(context, inputs):
     global bearer_token
     bearer_token = vraauth(inputs)
