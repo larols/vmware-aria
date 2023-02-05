@@ -54,7 +54,7 @@ def get_deploymentname(bearer_token, inputs):
         deploymentname = json_data["name"]
         return deploymentname
 
-# post the new set of tags to the resourceId
+# Post the new set of tags to resourceId
 def post_updated_tags_to_resource(bearer_token, newTags, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -85,7 +85,7 @@ def post_updated_tags_to_resource(bearer_token, newTags, inputs):
             json_data = resp.json()
             break
 
-# updating ingress key(s) with new tag value(s)
+# Updating ingress key(s) with new tag value(s)
 def update_existingTags_with_newTag(existingTags, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -97,7 +97,7 @@ def update_existingTags_with_newTag(existingTags, inputs):
     print(f"New set of tags for {resourceId} will be: {existingTags}")
     return (newTags)
 
-# get the existing tags for resourceId
+# Get the existing tags for resourceId
 def get_existing_tags(bearer_token, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -136,7 +136,7 @@ def internetexit(bearer_token, inputs):
                 sys.exit()
 
 
-# get bearer_token for vRA Api
+# Get bearer_token for vRA Api
 def vraauth(inputs):
     url = inputs["vra_url"]
     vralogin = {
