@@ -6,7 +6,6 @@ import requests
 import json
 import time
 
-
 bearer_token = None
 
 def handler(context, inputs):
@@ -53,7 +52,7 @@ def get_deploymentname(bearer_token, inputs):
         deploymentname = json_data["name"]
         return deploymentname
 
-# Post the new set of tags to resourceId
+# post the new set of tags to the resourceId
 def post_updated_tags_to_resource(bearer_token, newTags, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -84,7 +83,7 @@ def post_updated_tags_to_resource(bearer_token, newTags, inputs):
             json_data = resp.json()
             break
 
-# Updating ingress key(s) with new tag value(s)
+# updating ingress key(s) with new tag value(s)
 def update_existingTags_with_newTag(existingTags, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -96,7 +95,7 @@ def update_existingTags_with_newTag(existingTags, inputs):
     print(f"New set of tags for {resourceId} will be: {existingTags}")
     return (newTags)
 
-# Get the existing tags for resourceId
+# get the existing tags for resourceId
 def get_existing_tags(bearer_token, inputs):
     deploymentId = inputs['__metadata_deploymentId']
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -115,11 +114,11 @@ def get_existing_tags(bearer_token, inputs):
         print(f"Current set of tags for {resourceId} are: {existingTags}")
         return existingTags
 
-
 # Make sure we are not trying to change ingress policy from internet to something else
 def internetexit(bearer_token, inputs):
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
     url = inputs["vra_url"]
+    newTag = inputs["newTag"]
     vraheaders = {
         "accept": "application/json",
         "content-type": "application/json",
@@ -131,11 +130,9 @@ def internetexit(bearer_token, inputs):
         data = resp.json()
         for tag in data['properties']['tags']:
             if tag['key'] == 'ingress' and tag['value'] == 'internet':
-                print("Error: Changing from ingress policy internet is not allowed.")
-                sys.exit()
+                raise Exception(f"Error: Changing from ingress policy internet to {newTag} is not allowed.")
 
-
-# Get bearer_token for vRA Api
+# get bearer_token for vRA Api
 def vraauth(inputs):
     url = inputs["vra_url"]
     vralogin = {
@@ -156,4 +153,6 @@ def vraauth(inputs):
         resp.raise_for_status()
         bearer_token = resp.json()['token']
         return bearer_token
+
+
 
