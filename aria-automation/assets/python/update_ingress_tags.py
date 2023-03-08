@@ -2,6 +2,7 @@
 # This script/function is provided AS IS without warranty of any kind.
 # The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.
 
+
 import requests
 import json
 import time
@@ -27,7 +28,7 @@ def nsx_policy_update(inputs):
     deploymentname = get_deploymentname(bearer_token, inputs)
     url = f'https://{nsxmanager}/policy/api/v1/infra'
     headers = {'content-type': 'application/json'}
-    data = { "resource_type": "Infra", "children": [ { "resource_type": "ChildDomain", "Domain": { "id": "default", "resource_type": "Domain", "children": [ { "resource_type": "ChildSecurityPolicy", "marked_for_delete": "false", "SecurityPolicy": { "id": "Isolate_deployments", "display_name": "Isolate Deployments", "resource_type": "SecurityPolicy", "category": "Environment", "sequence_number": 98, "rules": [ { "resource_type": "Rule", "display_name": f"{deploymentname}_Isolate_out", "sources_excluded": "false", "source_groups": [ f"/infra/domains/default/groups/{deploymentname}" ], "destination_groups": [ f"/infra/domains/default/groups/Local_Subnets" ], "services": [ "ANY" ], "action": "ALLOW", "direction": "OUT", "scope": [ f"/infra/domains/default/groups/{deploymentname}" ] } ] } } ] } } ] }
+    data = { "resource_type": "Infra", "children": [ { "resource_type": "ChildDomain", "Domain": { "id": "default", "resource_type": "Domain", "children": [ { "resource_type": "ChildSecurityPolicy", "marked_for_delete": "false", "SecurityPolicy": { "id": "Isolate_deployments", "display_name": "Isolate Deployments", "resource_type": "SecurityPolicy", "category": "Environment", "sequence_number": 98, "rules": [ { "resource_type": "Rule", "display_name": f"{deploymentname}_Isolate_out", "sources_excluded": "false", "source_groups": [ f"/infra/domains/default/groups/{deploymentname}" ], "destinations_excluded": "true", "destination_groups": [ f"/infra/domains/default/groups/Local_Subnets" ], "services": [ "ANY" ], "action": "ALLOW", "direction": "OUT", "scope": [ f"/infra/domains/default/groups/{deploymentname}" ] } ] } } ] } } ] }
     try:
         resp = requests.patch(url=url, data=json.dumps(data), headers=headers, auth=(nsxuser, nsxpassword), verify=False)
         resp.raise_for_status()
@@ -114,6 +115,7 @@ def get_existing_tags(bearer_token, inputs):
         print(f"Current set of tags for {resourceId} are: {existingTags}")
         return existingTags
 
+
 # Make sure we are not trying to change ingress policy from internet to something else
 def internetexit(bearer_token, inputs):
     resourceId = inputs['__metadata_resourceProperties']['resourceId']
@@ -131,6 +133,7 @@ def internetexit(bearer_token, inputs):
         for tag in data['properties']['tags']:
             if tag['key'] == 'ingress' and tag['value'] == 'internet':
                 raise Exception(f"Error: Changing from ingress policy internet to {newTag} is not allowed.")
+
 
 # get bearer_token for vRA Api
 def vraauth(inputs):
@@ -153,6 +156,4 @@ def vraauth(inputs):
         resp.raise_for_status()
         bearer_token = resp.json()['token']
         return bearer_token
-
-
 
