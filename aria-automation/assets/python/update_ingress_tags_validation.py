@@ -51,7 +51,7 @@ def internetexit(bearer_token, resource_id):
 def getresourceid(bearer_token, inputs):
     deployment_id = inputs["deployment_id"]
     actual_name = inputs["actual_name"]
-    url = "https://xint-vra01.vmlab.se"
+    url = "VRA URL"
     vraheaders = {
         "accept": "application/json",
         "content-type": "application/json",
