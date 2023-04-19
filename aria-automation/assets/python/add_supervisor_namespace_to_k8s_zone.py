@@ -48,7 +48,7 @@ def update_k8s_zone(context, inputs):
     # Add the new supervisor namespace to the existing list
     new_namespace = {"namespaceSelfLinkId": target_id}
     k8s_zone["supervisorNamespaces"].append(new_namespace)
-    print(k8s_zone)
+
     # PUT the updated k8s zone
     response = requests.put(f"{vra_url}/cmx/api/resources/k8s-zones/{k8s_zone_id}", headers=headers, json=k8s_zone, verify=False)
     response.raise_for_status()
