@@ -1,7 +1,7 @@
 import requests
 import json
 
-# Set vra_url as a global variable
+# Set vra_url and k8s zone uid
 vra_url = "https://vra_fqdn"
 k8s_zone_id = "9c75b67a-ea18-45bf-b0bc-17e237cddab0" #K8s zone id - You can grab it from the URL when editing the k8s zone in Cloud assembly. "/automation-ui/#/provisioning-ui;ash=%2Fcmx%2FkubernetesZones%2Fedit%2F9c75b67a-ea18-45bf-b0bc-17e237cddab0"
 
